@@ -1,0 +1,14 @@
+.idea/
+.vscode/
+node_modules/
+target/
+dist/
+*.iml
+
+mysql/
+*.sock
+Balance-service/Balance-service/mysql/
+
+volume-data/
+data/
+*.log

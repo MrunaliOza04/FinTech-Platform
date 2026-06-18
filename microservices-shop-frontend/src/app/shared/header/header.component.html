@@ -1,0 +1,41 @@
+<nav class="bg-white border border-gray-200 px-4 py-3 shadow">
+
+  <div class="container mx-auto flex justify-between items-center">
+
+    <a href="/" class="text-xl font-bold">
+      FinTech Platform
+    </a>
+
+    <div>
+
+      @if (isAuthenticated) {
+
+      <span class="mr-4">
+          Hi {{ username }}
+        </span>
+
+      <button
+        (click)="logout()"
+        class="bg-red-500 text-white px-4 py-2 rounded">
+
+        Logout
+
+      </button>
+
+      } @else {
+
+      <button
+        (click)="login()"
+        class="bg-blue-500 text-white px-4 py-2 rounded">
+
+        Login
+
+      </button>
+
+      }
+
+    </div>
+
+  </div>
+
+</nav>
